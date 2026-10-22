@@ -47,13 +47,14 @@
 <h1>Privacy Policy</h1>
 <p class="sub">
   Solvoj IMb Scanner for Android (<code>com.solvoj.imb.android.app</code>)<br>
-  Published by the IMb Scanner development team · Last updated 13 October 2026</p>
+  Published by the IMb Scanner development team · Last updated 22 October 2026</p>
 
 <div class="summary">
   <p><strong>In short:</strong> Solvoj IMb Scanner does not collect, transmit, or
-  share any personal data. The app has no network access at all — it cannot send
-  anything anywhere. Everything it does happens on your device, including the
-  history of your readings, which you can delete at any time.</p>
+  share any personal data. Your readings never leave your device: everything the
+  app does with them happens there, including the history, which you can delete
+  at any time. The app's only connection is to Google Play, for buying
+  IMb Scanner Pro.</p>
 </div>
 
 <h2>What this policy covers</h2>
@@ -75,9 +76,9 @@
 <h2>Information we collect</h2>
 <p>
   <strong>None.</strong> We do not collect, store on our servers, or transmit any
-  personal or device information. The app is not able to: it does not request the
-  Android <code>INTERNET</code> permission, contains no networking code, and
-  therefore cannot send data off your device.
+  personal or device information. The app's own code makes no network
+  connections. The only part of the app that uses the network is Google Play's
+  billing library, which handles buying IMb Scanner Pro (below).
 </p>
 
 <h2>Camera</h2>
@@ -109,6 +110,23 @@
   policy.
 </p>
 
+<h2>Buying IMb Scanner Pro</h2>
+<p>
+  IMb Scanner Pro is an optional one-time purchase that adds tools for working
+  with your history. It is sold through Google Play. Google handles the payment,
+  under Google's terms and privacy policy, and we never see your payment
+  details. To know whether Pro is unlocked, the app asks Google Play on your
+  device; whether you own Pro is kept by Google Play, not by the app.
+</p>
+<p>
+  To talk to Google Play, the app includes Google's billing library. It needs
+  the <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> permissions,
+  and it may send Google diagnostic information about the purchase service,
+  governed by Google's privacy policy. It does not send your readings or your
+  history. Google Play gives us the order records it gives every developer who
+  sells through it, which we use only to handle sales, refunds and accounts.
+</p>
+
 <h2>Permissions</h2>
 <table>
   <thead>
@@ -117,7 +135,19 @@
   <tbody>
     <tr>
       <td><code>android.permission.CAMERA</code></td>
-      <td>To view and decode Intelligent Mail Barcodes. This is the only permission the app requests.</td>
+      <td>To view and decode Intelligent Mail Barcodes. This is the only permission the app asks you for.</td>
+    </tr>
+    <tr>
+      <td><code>android.permission.FLASHLIGHT</code></td>
+      <td>To turn on the flashlight in dim light. Android grants it without asking.</td>
+    </tr>
+    <tr>
+      <td><code>com.android.vending.BILLING</code></td>
+      <td>To buy IMb Scanner Pro through Google Play.</td>
+    </tr>
+    <tr>
+      <td><code>android.permission.INTERNET</code>,<br><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+      <td>Used by Google Play's billing library, for buying Pro. Android grants them without asking. The app's own code makes no network connections.</td>
     </tr>
   </tbody>
 </table>
@@ -126,7 +156,9 @@
 <ul>
   <li>The app contains <strong>no advertising</strong> and shows no ads.</li>
   <li>The app does <strong>not</strong> use the Android Advertising ID.</li>
-  <li>The app contains <strong>no analytics</strong> or crash-reporting services.</li>
+  <li>The app contains <strong>no analytics</strong> or crash-reporting services
+    of its own. Google's billing library may send Google diagnostics about
+    purchases (see <em>Buying IMb Scanner Pro</em>).</li>
   <li>The app does <strong>not</strong> track you across apps or websites.</li>
 </ul>
 
@@ -151,6 +183,8 @@
   Because no data is collected, there is nothing to share, sell, or disclose. We
   do not sell or share personal information with anyone. When you share a
   reading, Android passes its text to the app you choose; we do not receive it.
+  The same goes for a CSV file of your history exported with Pro: Android passes
+  it to the app you choose, and we do not receive it.
 </p>
 
 <h2>If you contact us for support</h2>
