@@ -50,7 +50,7 @@
   Published by the IMb Scanner development team · Last updated 25 October 2026</p>
 
 <div class="summary">
-  <p><strong>In short:</strong> Solvoj IMb Scanner does not collect, transmit, or
+  <p><strong>In short:</strong> The app itself does not collect, transmit, or
   share any personal data. Your readings never leave your device: everything the
   app does with them happens there, including the history, which you can delete
   at any time. The app's only connection is to Google Play, for buying
@@ -104,11 +104,13 @@
   backups and from transfers to a new device.
 </p>
 <p>
-  The app also stores in-app notifications and your preferences. All of this is
-  kept in the app's private storage, is not readable by other apps, and is
-  removed when you uninstall the app or clear its data from Android Settings. If
-  Android's backup is turned on for your Google account, Android may include the
-  preferences and notifications, but never the history, in that backup. The
+  The app also stores in-app notifications, your preferences, and counts of how
+  many barcodes you have scanned and on which days, which it uses to decide when
+  to ask for a rating or invite you to the survey. All of this is kept in the
+  app's private storage, is not readable by other apps, and is removed when you
+  uninstall the app or clear its data from Android Settings. If Android's backup
+  is turned on for your Google account, Android may include these, but never the
+  history, in that backup. The
   backup is made by Android, not by the app, and is governed by Google's privacy
   policy.
 </p>
@@ -150,7 +152,7 @@
     </tr>
     <tr>
       <td><code>android.permission.INTERNET</code>,<br><code>android.permission.ACCESS_NETWORK_STATE</code></td>
-      <td>Used by Google Play's billing library, for buying Pro. Android grants them without asking. The app's own code makes no network connections.</td>
+      <td>Declared by Google Play's billing library, for buying Pro. <code>ACCESS_NETWORK_STATE</code> is also declared by a media library that comes with CameraX, Android's camera library; it only lets the app see whether the device is online, and allows no connection. Android grants them without asking. The app's own code makes no network connections.</td>
     </tr>
   </tbody>
 </table>
@@ -184,8 +186,8 @@
 <h2 id="survey">Our survey</h2>
 <p>
   For a limited time, the app invites you to answer a short survey about how you
-  use it: from a card at the top of History, once you have used the app on a few
-  days, and from a row in Settings. Answering is optional, and the card goes
+  use it: from a card at the top of History, once you have used the app for a
+  while, and from a row in Settings. Answering is optional, and the card goes
   away for good when you answer it or tap No thanks.
 </p>
 <p>
